@@ -1,9 +1,9 @@
-# mongo-aggregation-builder
+# mongo-simple-aggregation-builder 
 
 A Node.js typescript implementation of mongodb aggregation query, with builder
 syntax.
 
-mongo-aggregation-builder includes TypeScript definition for superior development
+mongo-simple-aggregation-builder includes TypeScript definition for superior development
 experience.
 
 ## MongoDB compatibility
@@ -19,7 +19,7 @@ What's Included:
 ## Install
 
 ```
-npm install mongo-aggregation-builder --save
+npm install mongo-simple-aggregation-builder --save
 ```
 
 ## Usage
