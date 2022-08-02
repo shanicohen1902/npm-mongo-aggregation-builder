@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
       "module": "commonjs",
-      "declaration": false,
+      "declaration": true,
       "removeComments": true,
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "allowSyntheticDefaultImports": true,
       "sourceMap": true,
       "incremental": true,
-      "outDir": "./dist",
+      "outDir": "dist",
       "baseUrl": ".",
       "target": "ES2020",
       "moduleResolution": "node",

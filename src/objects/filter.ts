@@ -7,7 +7,7 @@ export class Filter {
     };
   }
 
-  first() {
+  first():any {
     return { $first: this };
   }
 }

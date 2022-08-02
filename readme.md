@@ -21,11 +21,16 @@ What's Included:
 ```
 npm install mongo-simple-aggregation-builder --save
 ```
+## Motivation
+
+Using mongo-simple-aggregation-builder, aggregation queries can be created in a flexible, imperative fashion instead of huge static query objects.
 
 ## Usage
 
+```
 
-## Motivation
+
+```
 
 ## Examples
 
