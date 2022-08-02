@@ -24,8 +24,6 @@ npm install mongo-aggregation-builder --save
 
 ## Usage
 
-### TypeScript
-
 
 ## Motivation
 
