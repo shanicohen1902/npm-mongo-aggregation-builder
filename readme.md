@@ -26,10 +26,24 @@ npm install mongo-simple-aggregation-builder --save
 Using mongo-simple-aggregation-builder, aggregation queries can be created in a flexible, imperative fashion instead of huge static query objects.
 
 ## Usage
+```ts
+import { Builder, FacetBuilder, GroupBuilder, MatchBuilder, ProjectBuilder } from 'mongo-simple-aggregation-builder'
 
-```
+const matchStage = new MatchBuilder().match('field_name', 'value');
 
+const projectStage = new ProjectBuilder()
+        .includeField('field_name')
+        .addField('calculated_field', '$another_field');
+                        
+const groupStage = new GroupBuilder('id')
+        .count('total')
+        .sum('aggregated_field', 'aggregated_val');
 
+const pipeline = new Builder()
+    .match(matchStage)
+    .project(projectStage)
+    .group(groupStage)
+    .build();
 ```
 
 ## Examples

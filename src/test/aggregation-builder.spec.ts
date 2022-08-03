@@ -43,6 +43,14 @@ test('pipeline Builder', () => {
   expect(actualResult).toEqual(expectResult);
 });
 
+test('match', () => {
+  const expectResult = {
+    field_name: 'value',
+  };
+  const actualResult = new MatchBuilder().match('field_name', 'value');
+  expect(expectResult).toEqual(actualResult);
+});
+
 test('test structure', () => {
   const query = [
     { $match: { source: { $in: ['mysql', 'mongo'] } } },
