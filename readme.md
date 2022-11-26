@@ -1,10 +1,11 @@
 # mongo-simple-aggregation-builder 
 
-A Node.js typescript implementation of mongodb aggregation query, with builder
-syntax. Using this builder, aggregation queries can be created in a flexible, imperative fashion instead of huge static query objects.
+A Node.js typescript implementation of mongodb aggregation query builder
 
-Mongo-simple-aggregation-builder comes with TypeScript definitions
-experience.
+Instead of creating huge static query objects, aggregation queries can be constructed in a flexible, imperative manner using this builder.
+
+
+Mongo-simple-aggregation-builder comes with TypeScripdefinitions experience.
 
 ## MongoDB compatibility
 
@@ -88,8 +89,8 @@ test('filter and return first from db array', () => {
     },
   };
 
-  const mysqlDb = new Comparison(Operator.EQ, '$$db.name', 'mysql');
-  const filterSourcesArray = new Filter('$db_list', 'db', mysqlDb);
+  const mysqlDbField = new Comparison(Operator.EQ, '$$db.name', 'mysql');
+  const filterSourcesArray = new Filter('$db_list', 'db', mysqlDbField);
   const received = new ProjectBuilder().addField('mysql_db', filterSourcesArray.first());
 
   expect(JSON.stringify(received)).toEqual(JSON.stringify(expected));
